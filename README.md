@@ -5,7 +5,7 @@ buzz.xyz 上で展開する、有志による非公式コミュニティの紹�
 参加は18歳以上です。当コミュニティを利用する料金は無料です（現時点。Buzz は Developer Preview で、容量などの制限があります）。
 
 ## 公開URL
-- https://<ユーザー名>.github.io/penguin-village-buzz/
+- https://shumpeipei.github.io/penguin-village-buzz/
 
 ## 技術スタック
 - HTML5 / CSS3 (ビルド不要の静的ホスティング)
