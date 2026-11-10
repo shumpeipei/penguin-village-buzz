@@ -1,0 +1,13 @@
+# OS
+.DS_Store
+
+# 環境変数・シークレット
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# 依存・ビルド成果物
+node_modules/
+dist/
