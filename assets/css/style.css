@@ -1,0 +1,97 @@
+:root {
+  --color-bg: #f4f9fc;
+  --color-text: #1f2d3a;
+  --color-primary: #1e88c7;
+  --color-primary-dark: #146394;
+  --color-surface: #ffffff;
+  --color-border: #d3e2ec;
+  --max-width: 880px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+  line-height: 1.8;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+header {
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 24px;
+  padding-block: 12px;
+}
+
+header h1 { margin: 0; font-size: 1.1rem; }
+nav { display: flex; gap: 16px; font-size: 0.9rem; }
+nav a { color: var(--color-text); text-decoration: none; }
+nav a:hover { color: var(--color-primary); }
+
+section { padding: 56px 0; }
+section:nth-of-type(even) { background: var(--color-surface); }
+
+#hero {
+  text-align: center;
+  background: linear-gradient(180deg, #dff0fa 0%, var(--color-bg) 100%);
+  padding: 80px 0;
+}
+#hero h2 { font-size: clamp(1.6rem, 5vw, 2.4rem); line-height: 1.4; }
+
+h3 { font-size: 1.4rem; margin-top: 0; }
+
+.cta-container { margin-top: 24px; }
+
+.btn-primary {
+  display: inline-block;
+  padding: 14px 32px;
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 999px;
+  transition: background 0.2s;
+}
+.btn-primary:hover { background: var(--color-primary-dark); }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-surface);
+}
+th, td {
+  padding: 12px;
+  border: 1px solid var(--color-border);
+  text-align: left;
+  vertical-align: top;
+}
+th { background: #e8f3fa; }
+
+footer {
+  padding: 32px 0;
+  background: #1f2d3a;
+  color: #cfd9e1;
+  font-size: 0.85rem;
+}
+footer a { color: #8cc9ee; }
+.copyright { text-align: center; margin-bottom: 0; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 64px; }
