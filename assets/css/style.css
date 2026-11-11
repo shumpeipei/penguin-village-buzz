@@ -42,7 +42,19 @@ header .container {
   padding-block: 12px;
 }
 
-header h1 { margin: 0; font-size: 1.1rem; }
+header h1 {
+  margin: 0;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.site-logo {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  object-fit: cover;
+}
 nav { display: flex; flex-wrap: wrap; gap: 16px; font-size: 0.9rem; }
 nav a { color: var(--color-text); text-decoration: none; }
 nav a:hover { color: var(--color-primary); }
@@ -53,7 +65,15 @@ section:nth-of-type(even) { background: var(--color-surface); }
 #hero {
   text-align: center;
   background: linear-gradient(180deg, #dff0fa 0%, var(--color-bg) 100%);
-  padding: 72px 0 64px;
+  padding: 64px 0 56px;
+}
+.hero-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(30, 136, 199, 0.2);
+  margin-bottom: 20px;
+  object-fit: cover;
 }
 #hero h2 { font-size: clamp(1.6rem, 5vw, 2.3rem); line-height: 1.4; margin-bottom: 16px; }
 #hero p { max-width: 640px; margin: 0 auto 12px; }
