@@ -247,3 +247,13 @@ footer a { color: #8cc9ee; }
 .copyright { text-align: center; margin-bottom: 0; }
 
 html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+
+/* アプリ内ブラウザ警告 */
+.inapp-warning {
+  background: #fff4e0;
+  border-bottom: 1px solid #f0c987;
+  color: #7a4a00;
+  font-size: 0.9rem;
+  padding: 10px 0;
+}
+.inapp-warning[hidden] { display: none; }
