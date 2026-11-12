@@ -5,3 +5,12 @@ const IN_APP_BROWSER = /Line\/|FBAN|FBAV|Instagram|Twitter|MicroMessenger|KAKAOT
 if (IN_APP_BROWSER.test(navigator.userAgent)) {
   document.getElementById("inapp-warning")?.removeAttribute("hidden");
 }
+
+// #join-pc へのアンカー遷移時に折りたたみを自動で開く
+const openJoinPc = () => {
+  if (location.hash === "#join-pc") {
+    document.getElementById("join-pc")?.setAttribute("open", "");
+  }
+};
+openJoinPc();
+addEventListener("hashchange", openJoinPc);

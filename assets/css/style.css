@@ -257,3 +257,17 @@ html { scroll-behavior: smooth; scroll-padding-top: 64px; }
   padding: 10px 0;
 }
 .inapp-warning[hidden] { display: none; }
+
+/* PC参加手順（折りたたみ） */
+.join-pc {
+  margin-top: 32px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 4px 20px;
+}
+.join-pc summary {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 12px 0;
+}
