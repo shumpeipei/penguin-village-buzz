@@ -273,3 +273,4 @@ html { scroll-behavior: smooth; scroll-padding-top: 64px; }
 }
 
 .support { text-align: center; margin: 12px 0; }
+.faq-a > span { flex: 1; min-width: 0; }
