@@ -271,3 +271,5 @@ html { scroll-behavior: smooth; scroll-padding-top: 64px; }
   font-weight: bold;
   padding: 12px 0;
 }
+
+.support { text-align: center; margin: 12px 0; }
